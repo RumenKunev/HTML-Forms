@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Flight order</title>
+    <link href="styles/FlightOrder.css" rel="stylesheet"/>
+</head>
+<body>
+    <form method="get" action="">
+        <h2>FLIGHT ORDER</h2>
+        <section id="left-field">
+            <label for="dep-city">From</label>
+            <input id="dep-city" type="text" name="dep-city" value="" placeholder="enter a city"/>
+            <label for="dep-date">Departure Date</label>
+            <input id="dep-date" type="date" name="dep-date" value="2014-06-09" />
+            <label for="rtn-date">Return Date</label>
+            <input id="rtn-date" type="date" name="rtn-date" value="2014-06-13" />
+            <table id="pass-age">
+                <tr>
+                    <td>
+                        <label for="over-twelve">12+</label>
+                        <input id="over-twelve" type="number" name="over-twelve" value="0" min="0" max="10"/>
+                    </td>
+                    <td>
+                        <label for="two-to-twelve">2-12</label>
+                        <input id="two-to-twelve"type="number" name="two-to-twelve" value="0" min="0" max="10"/>
+                    </td>
+                    <td>
+                        <label for="zero-to-two">0-2</label>
+                        <input id="zero-to-two" type="number" name="zero-to-two" value="0" min="0" max="10"/>
+                    </td>
+                </tr>
+            </table>
+        </section>
+        <section id="right-field">
+            <label for="dest-city">To</label>
+            <input id="dest-city" type="text" name="dest-city" value="" placeholder="enter a city"/>
+            <input id="checkbox" type="checkbox" name="direct-flight" value="">
+                <label for="checkbox">Prefer directs</label>
+            <table id="time-schedule">
+                <tr>
+                    <td>
+                        <label for="dep-time">Time interval</label>
+                        <input id="dep-time" type="time" name="dep-start-time" value="00:20">
+                    </td>
+                    <td><input type="time" name="dep-end-time" value="05:00"></td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="arr-time">Time interval</label>
+                        <input id="arr-time" type="time" name="arr-start-time" value="16:00">
+                    </td>
+                    <td><input type="time" name="arr-end-time" value="22:00"></td>
+                </tr>
+            </table>
+            <label for="class">Choose class</label>
+            <select id="class" name="class">
+                <option value="1" selected>Economy</option>
+                <option value="2">Business</option>
+                <option value="3">Business Lux</option>
+            </select>
+            <p><input id="search" type="submit" value="Search"/></p>
+        </section>
+    </form>
+</body>
+</html>

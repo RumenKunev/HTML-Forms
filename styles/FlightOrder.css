@@ -1,0 +1,42 @@
+form{
+    background-color: #FFC0CB;
+    display: inline-block;
+}
+
+h2{
+    text-align: center;
+    font-style: italic;
+}
+section{
+    display: inline-block;
+    width: 230px;
+    vertical-align: top;
+    margin: 5px;
+}
+
+#left-field input{
+    width: 100%;
+}
+
+#dep-city{
+    margin-bottom: 25px;
+}
+#pass-age{
+    border-spacing: 5px;
+
+}
+
+#checkbox{
+    margin: 2px;
+}
+ #time-schedule tr{
+     vertical-align: bottom;
+ }
+#dest-city, #class, #search {
+    width: 100%;
+}
+
+label{
+    font-size: 11px;
+    font-style: italic;
+}

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Simple Form</title>
+    <link href="styles/SimpleForm.css" rel="stylesheet">
+</head>
+<body>
+    <div id="background">
+        <h1>Enter into the system</h1>
+        <p>It is necessary to login in your account in order to sign in for a course.</p>
+
+    <div id="left-block">
+        <p><span>ARE YOU NEW?</span> REGISTER</p>
+        <form method="post" action="/">
+            <input class="data" type="text" name="userName" value="" placeholder="User name" autofocus/>
+            <input class="data" type="email" name="e-mail" value="" placeholder="e-mail"/>
+            <input class="data" type="password" name="password" value="" placeholder="password"/>
+            <input class="data" type="password" name="confirm-password" value="" placeholder="Confirm password"/>
+            <p><input id="submit-btn" type="submit" name="register" value="Register"/></p>
+        </form>
+    </div>
+    <div id="right-block">
+        <p>ALREADY A STUDENT? LOGIN</p>
+        <form method="post" action="/">
+            <input class="data" type="text" name="studentName" value="" placeholder="User name" autofocus/>
+            <input class="data" type="password" name="Student-password" value="" placeholder="password"/>
+            <div>
+                <input id="checkbox" type="checkbox" name="checked" value="yes"/>
+                <label for="checkbox">Remember me?</label>
+                <input id="login-btn"type="submit" name="Login" value="Login"/>
+            </div>
+            <a href="" alt="forgotten password">Forgot Password</a>
+        </form>
+    </div>
+    </div>
+</body>
+</html>
