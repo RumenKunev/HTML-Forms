@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>FakeBook</title>
+    <link href="styles/FakebookForm.css" rel="stylesheet">
+</head>
+<body>
+    <div id="main">
+        <h1>fakebook<span>&reg;</span></h1>
+        <h2>Registration</h2>
+        <h3>It is safe and it will always be!</h3>
+        <form method="post" action="">
+            <div id="left-fieldset">
+                <fieldset>
+                    <legend>None-Important Information</legend>
+                    <input type="text" name="firstName" value="" placeholder="First Name"/>
+                    <input type="text" name="lastName" value="" placeholder="Last Name"/>
+                    <input type="email" name="e-mail" value="" placeholder="Your e-mail"/>
+                    <input type="tel" name="tel" value="" placeholder="Phone Number"/>
+                    <input type="password" name="password" value="" placeholder="Password" />
+                    <input type="url" name="url" value="" placeholder="Website" />
+                    <label for="birthday">Birthday</label>
+                    <input id="birthday" type="date" name="birthday" value="2014-09-05"/>
+                    <p id="gender">
+                        <input id="female" type="radio" name="gender" value="1"/>
+                        <label for="female">Female</label>
+                        <input id="male" type="radio" name="gender" value="2"/>
+                        <label for="male">Male</label>
+                        <input id="other" type="radio" name="gender" value="3" checked/>
+                        <label for="other">Other</label>
+                    </p>
+                </fieldset>
+                <input id="reset" type="reset" value="Clear Form"/>
+            </div>
+            <div id="right-fieldset">
+                <fieldset>
+                    <legend>Important Information *required</legend>
+                    <input class="big-input" type="text" name="country" value="" placeholder="Country" required/>
+                    <input class="big-input" type="text" name="village" value="" placeholder="Village" required/>
+                    <input class="big-input" type="text" name="district" value="" placeholder="District" required/>
+                    <input class="big-input" type="text" name="street" value="" placeholder="Street" required/>
+                    <input class="small-input" type="text" name="number" value="" placeholder="Nr." required/>
+                    <input class="small-input" type="text" name="floor" value="" placeholder="Floor" required/>
+                    <input class="small-input" type="text" name="ap-num" value="" placeholder="Ap. Nr" required/>
+                    <p id="required-info">
+                        <label for="color">Door Color</label><br />
+                        <input id="color" type="color" name="door-color" value="#9b5812">
+                        <input type="text" name="watermeter" value="" placeholder="Water Meter Nr">
+                        <select name="panties-size" required>
+                            <option hidden>Aunt Panties' Size</option>
+                            <option value="1">L</option>
+                            <option value="2">XL</option>
+                            <option value="3">XXXXL</option>
+                        </select>
+                    </p>
+                    <p id="additional-info">
+                        <label for="additional-info">More Personal Information</label>
+                        <textarea name="additional info" placeholder="Give Us More Information!!!"></textarea>
+                    </p>
+                </fieldset>
+                <input id="submit" type="submit" value="Register" />
+            </div>
+         </form>
+    </div>
+</body>
+</html>
